@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head><title>Cart | Voltix</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body data-page="cart">
+<header class="site-header"><div class="wrap nav">
+  <a class="logo" href="index.html">Volt<span>ix</span></a>
+  <nav aria-label="Main"><a href="index.html">Home</a><a href="products.html">Catalog</a><a href="cart.html" aria-current="page">Cart <span class="pill" data-count="cart">0</span></a></nav>
+  <button id="themeBtn" class="icon-btn" aria-label="Switch light or dark theme">🌙</button>
+</div></header>
+<main class="wrap block">
+  <h1>Your cart</h1>
+  <div class="cart-layout">
+    <section aria-label="Cart items"><div id="lines"></div></section>
+    <aside class="summary" aria-label="Order summary">
+      <h2>Summary</h2>
+      <dl id="totals"></dl>
+      <form id="promoForm" class="promo">
+        <label for="promo" class="sr">Promo code</label>
+        <input id="promo" type="text" placeholder="Promo code (try TECH10)" autocomplete="off">
+        <button class="btn" type="submit">Apply</button>
+      </form>
+      <form id="checkout" novalidate>
+        <h3>Checkout</h3>
+        <label for="name">Full name</label><input id="name" required autocomplete="name">
+        <p class="err" id="nameErr"></p>
+        <label for="email">Email</label><input id="email" type="email" required autocomplete="email">
+        <p class="err" id="emailErr"></p>
+        <label for="address">Delivery address</label><input id="address" required autocomplete="street-address">
+        <p class="err" id="addressErr"></p>
+        <button id="placeBtn" class="btn primary wide" type="submit">Place order</button>
+      </form>
+    </aside>
+  </div>
+  <section class="block"><h2>Your wishlist</h2><div id="wish" class="grid" aria-live="polite"></div></section>
+</main>
+<footer class="site-footer"><div class="wrap">Voltix, © <span id="year"></span>. Product data from DummyJSON. This is a student demo store: no real payments. Your cart and wishlist stay in this browser.</div></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div><dialog id="modal" aria-label="Product details"></dialog></body></html>

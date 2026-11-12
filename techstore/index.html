@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><title>Voltix: phones, laptops and tablets</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body data-page="home">
+<header class="site-header"><div class="wrap nav">
+  <a class="logo" href="index.html">Volt<span>ix</span></a>
+  <nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="products.html">Catalog</a><a href="cart.html">Cart <span class="pill" data-count="cart">0</span></a></nav>
+  <button id="themeBtn" class="icon-btn" aria-label="Switch light or dark theme">🌙</button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="eyebrow">New season deals</p>
+    <h1>Tech that keeps up with you.</h1>
+    <p class="lead">Compare smartphones, laptops, tablets and accessories. Save favourites, build a cart and check out in a minute.</p>
+    <form class="hero-search" action="products.html" method="get" role="search">
+      <label for="q" class="sr">Search products</label>
+      <input id="q" name="q" type="search" placeholder="Try iPhone, laptop or charger" required>
+      <button class="btn primary" type="submit">Search</button>
+    </form>
+  </div>
+  <div><h2 class="small-h">Deal of the day</h2><div id="daily" aria-live="polite"></div></div>
+</div></section>
+
+<section class="wrap block"><h2>Shop by category</h2>
+  <div class="cats">
+    <a class="cat" href="products.html?cat=smartphones"><span>📱</span>Smartphones</a>
+    <a class="cat" href="products.html?cat=laptops"><span>💻</span>Laptops</a>
+    <a class="cat" href="products.html?cat=tablets"><span>📲</span>Tablets</a>
+    <a class="cat" href="products.html?cat=mobile-accessories"><span>🎧</span>Accessories</a>
+  </div></section>
+
+<section class="wrap block"><h2>Biggest discounts</h2><div id="top" class="grid" aria-live="polite"></div></section>
+
+<section class="wrap block"><h2>Your store</h2>
+  <div class="stats">
+    <div><strong data-count="products">…</strong><span>products to browse</span></div>
+    <div><strong data-count="wish">0</strong><span>in your wishlist</span></div>
+    <div><strong data-count="cart">0</strong><span>items in your cart</span></div>
+  </div></section>
+
+<section class="wrap block"><h2>How it works</h2>
+  <ol class="steps">
+    <li><b>Browse</b> Filter by category, brand, price or stock on the Catalog page.</li>
+    <li><b>Save</b> Tap the heart to keep a product in your wishlist.</li>
+    <li><b>Buy</b> Add to cart, change quantities, apply the code TECH10 and place your order.</li>
+  </ol></section>
+</main>
+<footer class="site-footer"><div class="wrap">Voltix, © <span id="year"></span>. Product data from DummyJSON. This is a student demo store: no real payments. Your cart and wishlist stay in this browser.</div></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div><dialog id="modal" aria-label="Product details"></dialog></body></html>
